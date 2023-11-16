@@ -126,6 +126,9 @@ footer{
     .app .name .title{
         margin-left: 5px;
     } 
+/***********************************
+         MEDIA  QUERY
+***********************************/
     @media screen and (max-width:600px){
         .container header{
             background-color: var(--header-color);
@@ -179,11 +182,15 @@ footer{
 /***********************************
            MAIN
 ***********************************/
+/***********************************
+         SECTION  AFFIX
+***********************************/
   main .affix{
     background-color: var(--affix-color);
     display: flex;
     justify-content: end;
     padding: 35px;
+    position: sticky;
     
   }
   main .affix .button{
@@ -193,8 +200,28 @@ footer{
     border-radius: 86px;
     font-size: 0.8em;
     border-color: #FFFFFF;
+ }
+/***********************************
+         SECTION  MENU
+***********************************/
+main .menu{
+    margin-top: 20px;
+} 
+main .menu .list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main .menu .list li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 5px;
+ }
+ main .menu .list li a{
+    color: var(--subtitle-color);
+    text-decoration: none;
+ }
 
-  }
 /***********************************
             FOOTER
 ***********************************/
