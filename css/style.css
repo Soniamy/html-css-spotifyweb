@@ -9,9 +9,107 @@ box-sizing: border-box;
 /***********************************
             GENERAL
 ***********************************/
-    
- /***********************************
-            MAIN
+:root{
+    --header-color:#000000;
+    --main-color: #151921;
+    --footer-color:#282828;
+    --title-color: #FFFFFF;
+    --subtitle-color: #7B7C81;
+    --affix-color:#090B11;
+    --icon-header:#D2D2D2;
+    --title-l:1em;
+    --title-xl:1.5em;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container header{
+    background-color: var(--header-color);
+    max-width: 20%;
+    height: 100vh;
+    padding: 20px;
+    line-height: 2em;
+}
+.container main{
+    background-color: var(--main-color);
+}
+footer{
+    background-color: var(--footer-color);
+}
+.title{
+    color: var(--title-color);
+    font-weight: bold;
+}
+.list li{
+    color: var(--subtitle-color);
+    list-style: none;
+}
+.container header a{
+    text-decoration: none;
+    color: var(--subtitle-color);
+
+}
+.container header .subtitle{
+    color: var(--subtitle-color);
+}
+
+/***********************************
+           HEADER
+***********************************/
+      .logo{
+        width: 200px;
+        padding-top: 10px;
+        margin-bottom: 25px;
+      }
+       .logo img{
+        width: 100%;
+      }
+
+       .menu .list .is-active a{
+        color: var(--title-color);
+      }
+      .playlist{
+        height: 50%;
+        overflow: hidden;
+      }
+       .playlist .create{
+        font-size:var(--title-l);
+     }
+     .playlist .create .subtitle{
+        display: flex;
+        align-items: center;
+     }
+       .playlist .create .subtitle i{
+        font-size: 2em;
+      }
+       .playlist .create .subtitle span{
+        line-height: 3px;
+        margin-left: 10px;
+      }
+        .playlist .list{
+        max-height: 10em;
+        height: calc(100% - 70px);
+        overflow: scroll;
+      }
+      .app .subtitle button{
+       border: none;
+       background-color: #000000;
+    }
+    .app .subtitle span{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 0.8em;
+    }
+    .app .name{
+        margin-top: 10px;
+    }
+
+
+/***********************************
+           MAIN
 ***********************************/
 /***********************************
             FOOTER
