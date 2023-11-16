@@ -53,6 +53,11 @@ footer{
     color: var(--subtitle-color);
     font-size: 0.8em;
 }
+.subtitle-row{
+    color: var(--subtitle-color);
+    font-size: 0.8em;
+}
+
 .list li{
     color: var(--subtitle-color);
     list-style: none;
@@ -239,18 +244,18 @@ main .menu .list li{
      .playlist-row > .title{
         font-size: var(--title-xl);
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+        margin-left: 15px;
     }
     .playlist-row .albums{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        
     }
     .playlist-row .albums .album{
-       width: 160px;
+       width: 100%;
        text-align: center;
-       margin-left: 20px;
-    }
-    .playlist-row .albums .album .image{
-        width: 160px;
+       padding: 0.5em;
     }
    .playlist-row .albums .album .image img{
         width: 100%;
@@ -259,7 +264,24 @@ main .menu .list li{
         font-size: var(--title-l);
         line-height: 30px;
     }
-    
+    .playlist-row .subtitle-row{
+        margin-bottom: 25px;
+        margin-top: -16px;
+        margin-left: 15px;
+    }
+/***********************************
+         MEDIA  QUERY
+***********************************/
+@media screen and (max-width:1110px){
+    .playlist-row .albums{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+}
+@media screen and (max-width:700px){
+    .playlist-row .albums{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
 
 /***********************************
             FOOTER
