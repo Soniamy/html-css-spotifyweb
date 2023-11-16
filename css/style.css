@@ -39,6 +39,8 @@ box-sizing: border-box;
 .container main{
     background-color: var(--main-color);
     width: 100%;
+    height: 100%;
+    overflow: scroll;
 }
 footer{
     background-color: var(--footer-color);
@@ -46,6 +48,10 @@ footer{
 .title{
     color: var(--title-color);
     font-weight: bold;
+}
+.subtitle{
+    color: var(--subtitle-color);
+    font-size: 0.8em;
 }
 .list li{
     color: var(--subtitle-color);
@@ -59,6 +65,10 @@ footer{
 .container header .subtitle{
     color: var(--subtitle-color);
 }
+.container .wrapper{
+  padding: 20px;
+}
+
 
 /***********************************
            HEADER
@@ -98,6 +108,7 @@ footer{
        .playlist .create .subtitle span{
         line-height: 3px;
         margin-left: 10px;
+        font-size: 1.5em;
       }
         .playlist .list{
         max-height: 10em;
@@ -191,6 +202,7 @@ footer{
     justify-content: end;
     padding: 35px;
     position: sticky;
+    top: 0;
     
   }
   main .affix .button{
@@ -221,6 +233,33 @@ main .menu .list li{
     color: var(--subtitle-color);
     text-decoration: none;
  }
+ /***********************************
+         SECTION  PLAYLIST ROW
+***********************************/
+     .playlist-row > .title{
+        font-size: var(--title-xl);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .playlist-row .albums{
+        display: flex;
+    }
+    .playlist-row .albums .album{
+       width: 160px;
+       text-align: center;
+       margin-left: 20px;
+    }
+    .playlist-row .albums .album .image{
+        width: 160px;
+    }
+   .playlist-row .albums .album .image img{
+        width: 100%;
+    }
+    .playlist-row .albums .album .title{
+        font-size: var(--title-l);
+        line-height: 30px;
+    }
+    
 
 /***********************************
             FOOTER
